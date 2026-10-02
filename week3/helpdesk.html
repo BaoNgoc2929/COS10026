@@ -20,8 +20,8 @@
             <p>
                 <!--use label to click on for="..." is also understand-->
                 <label for="student_id">Student ID</label>
-                <!--pattern doesn't use for number inputs, b/c need set 7->9 digits => use \d{7,9}-->
-                <input type="text" name="student_id" id="student_id" pattern="\d{7,9}" required="required">
+                <!--pattern doesn't use for number inputs, b/c need set 7->10 digits => use \d{7,10}-->
+                <input type="text" name="student_id" id="student_id" pattern="\d{7,10}" required="required">
             </p>
             <p>
                 <label for="given_name">Given Name</label>
@@ -67,8 +67,8 @@
                     <input type="checkbox" id="issue_5" name ="issue[]" value="MySQL">
                     <label for="issue_5">MySQL</label>
                 </p>
-                <p>Description of Issue</p>
-                    <textarea name="issue_description" rows="4" cols="50" placeholder="Write description of your problem here..."></textarea>
+                <p><label for="issue_description">Description of Issue</label></p>
+                    <textarea name="issue_description" id="issue_description" rows="4" cols="50" placeholder="Write description of your problem here..."></textarea>
         </fieldset>
             <!--PREFFERED DATE/TIME-->
         <fieldset>
