@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CWA Help Desk appointment booking form">
+    <meta name="keywords" content="HTML, Form, Help Desk, CWA">
+    <meta name="author" content="Tran Bao Ngoc">
+    <title>CWA Help Desk Appointment</title>
+</head>
+<body>
+    <a href="http://www.swin.edu.au"><img src="images/logo.png" alt="Logo Swinburne of Technology" width="100"></a>
+    <h1>CWA Help Desk Appointment</h1>
+    <p>The Help Desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday</p>
+    <p>Check Blackboard for when CWA tutors will be there</p>
+    <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+        <!--STUDENT DETAILS-->
+        <fieldset>
+            <legend>Student details</legend>
+            <p>
+                <!--use label to click on for="..." is also understand-->
+                <label for="student_id">Student ID</label>
+                <!--pattern doesn't use for number inputs, b/c need set 7->9 digits => use \d{7,9}-->
+                <input type="text" name="student_id" id="student_id" pattern="\d{7,9}" required="required">
+            </p>
+            <p>
+                <label for="given_name">Given Name</label>
+                <input type="text" name="given_name" id="given_name" maxlength="15" pattern="[A-Za-z]+" required="required">
+                <label for="family_name">Family Name</label>
+                <input type="text" name="family_name" id="family_name" maxlength="15" pattern="[A-Za-z]+" required="required">
+            </p>
+        </fieldset>
+        <!--YOUR UNIT-->
+        <fieldset>
+            <legend>Your Unit</legend>
+            <p>
+                <input type="radio" name="unit" id="unit_1" value="COS10011" required="required">
+                <label for="unit_1">COS10011</label>
+                <input type="radio" name="unit" id="unit_2" value="COS60004">
+                <label for="unit_2">COS60004</label>
+                <input type="radio" name="unit" id="unit_3" value="COS60007">
+                <label for="unit_3">COS60007</label>
+            </p>
+            <p>
+                <label for="your_tutor">Your Tutor</label>
+                <select id="your_tutor" name="your_tutor" required="required">
+                    <option value="">Please Select</option>
+                    <option value="Mr.Wilson">Mr.Wilson</option>
+                    <option value="Mr.Nghia">Mr.Nghia</option>
+                    <option value="Mr.Le">Mr.Le</option>
+                </select>
+            </p>
+        </fieldset>
+        <!--ISSUE-->
+        <fieldset>
+            <legend>Issue</legend>
+                <p>
+                    <!--check used for box checked-->
+                    <input type="checkbox" id="issue_1" name ="issue[]" value="HTML" checked="checked">
+                    <label for="issue_1">HTML</label>
+                    <input type="checkbox" id="issue_2" name ="issue[]" value="CSS">
+                    <label for="issue_2">CSS</label>
+                    <input type="checkbox" id="issue_3" name ="issue[]" value="JavaScript">
+                    <label for="issue_3">JavaScript</label>
+                    <input type="checkbox" id="issue_4" name ="issue[]" value="PHP">
+                    <label for="issue_4">PHP</label>
+                    <input type="checkbox" id="issue_5" name ="issue[]" value="MySQL">
+                    <label for="issue_5">MySQL</label>
+                </p>
+                <p>Description of Issue
+                    <textarea name="issue_description" rows="4" cols="50" placeholder="Write description of your problem here..."></textarea>
+                </p>
+        </fieldset>
+            <!--PREFFERED DATE/TIME-->
+        <fieldset>
+            <legend>Preferred Date/Time</legend>
+                <p>
+                    <label for="date">Date</label>
+                    <input type="text" name="date" id="date" placeholder="dd/mm/yyyy" pattern="\d{2}/\d{2}/\d{4}">
+                </p>
+                <p>
+                    <label for="time">Time</label>
+                    <input type="text" name="time" id="time" placeholder="hh:mm" pattern="\d{2}:\d{2}">
+                </p>
+        </fieldset>
+        <input type="submit" value="Book">
+        <input type="reset" value="Reset form">   
+    </form>
+
+</body>
+</html>
