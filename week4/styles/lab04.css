@@ -1,11 +1,26 @@
+/*
+
+filename: Tran Bao Ngoc
+
+author: Tran Bao Ngoc
+
+created: 09/10/2026
+
+last modified: 09/10/2026
+
+description: it refers to lab04.html
+
+*/
+
+
 /* universal element selector star */
 /* elements selectors */
 *{
     font-family:calibri, sans-serif;
-    color:#2F4F4F 
+    color:#2F4F4F;
 }
 h1 { 
-    color: rgb(231, 124, 231); 
+    color: purple; 
     font-size: 2em; 
     font-weight: bold; 
 }
@@ -17,16 +32,26 @@ h2{
 /* group selectors */
 h1,h2,h3{
     font-family: arial, sans-serif;
-    /*border: 1px solid black; */
+}
+
+/*table{    ----> only the outer table gets a border
+    border: 1px solid black;
+}*/
+table,th,td{
+    border: 1px solid black;
+}
+
+aside,footer{
+    font-style:italic;
 }
 /* ID selector --> # */
 #images {
          text-align : center;  /* careful: center has US spelling */
          }
-/* class selector --> . */
-.color{
+#headings_h3{
     color:rgb(255,0,0);
 }
+/* class selector --> . */
 .special {
           color: darkorange;
           font-weight:bold;
@@ -43,13 +68,12 @@ nav a {
 ol ul {
     list-style-type: square;
 }
+
+/* Pseudo classes */
 aside:hover {
     display: none;
 }
-aside p{
-    font-style:italic;
-}
-/* Pseudo classes */
+
 nav a:hover{
     background-color: lightblue;
     border-color: darkblue;
