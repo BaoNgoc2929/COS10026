@@ -48,6 +48,10 @@ table {
 #tables {
     margin:top;
     float: right;
+    
+}
+#tables :hover{
+    display:none;
 }
 /*we want to stop subsequent elements floating up, we need to use the clear property*/
 #hyperlinks{
