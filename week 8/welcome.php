@@ -1,6 +1,5 @@
 <?php 
 session_start();
-
 if (!isset ($_SESSION ["user"])){
     header ("Location: login.php");
     exit;
@@ -16,7 +15,8 @@ if (!isset ($_SESSION ["user"])){
 <body>
     <?php include 'header.inc'; ?>
 
-    <p>Welcome, <?php echo htmlspecialchars($_SESSION["user"]); ?></p>
+    <p>Welcome, <?php echo htmlspecialchars($_SESSION["user"]); ?></p><br>
+    <p>Your token is:  <?php echo htmlspecialchars($_SESSION["token"]); ?></p><br>
 
     <?php include 'footer.inc'; ?>
 </body>
