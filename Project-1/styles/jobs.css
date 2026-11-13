@@ -1,0 +1,182 @@
+body{
+    margin: 0;
+}
+
+/* Style the introduction box */
+.introduction {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:#F0EFF4;
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+    margin: 0.1em auto;
+    border:0.1em solid rgb(31, 137, 230);
+    width:85%;
+}
+.introduction p:first-of-type{
+    color:#006199;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.introduction h1{
+    font-family: 'Inter', sans-serif;
+}
+section h2{
+    color:#006199;
+}
+.overview{
+    margin-left:3em;
+}
+
+/* Style the "WHY JOIN US?" section */
+.join-us {
+    background-color:#F0EFF4;
+    border:0.1em solid rgb(31, 137, 230);
+    margin: 2em auto;
+    padding: 25px;
+    border-radius: 10px;
+    width:85%;
+    line-height: 1.5;
+}
+/* Remove bullet points from the list */ 
+.join-us ul{
+    list-style-type: none;
+    line-height: 2;
+}
+/* SCRUM-29: Aside floated right */
+.job_1 .job-details, .job_2 .job-details {
+    float: right;
+    width: 25%;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #F0EFF4;
+    box-sizing: border-box;
+}
+
+/* Style the div elements inside the aside section */
+.job_1 .job-details .detail-item, .job_2 .job-details .detail-item {
+    float: none;
+    width: 100%;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+/* Prevent content after Job 2 from overflowing */
+.job_1,.job_2 {
+    display: flow-root;
+}
+/* Style the boxes containing job descriptions */
+.job_1, .job_2 {
+    background-color:rgb(249, 250, 251);
+    border:0.1em solid rgb(31, 137, 230);
+    margin: 2em auto;
+    padding: 25px;
+    padding-bottom: 80px;
+    border-radius: 10px;
+    width:85%;
+    line-height: 1.5;
+}
+.job-ref{
+    background-color:rgb(240, 237, 30);
+    border:0.1em solid;
+    margin: 2em auto;
+    padding: 0.2em 0.5em;
+    border-radius: 20px;
+    width:fit-content;
+    
+}
+.job-type{
+    background-color:rgb(102, 225, 247);
+    border:0.1em solid;
+    margin: 2em auto;
+    padding: 0.2em 0.5em;
+    border-radius: 20px;
+    width:fit-content;
+}
+
+/* Display job type and job reference on the same line */
+.job-type,.job-ref{
+    display: inline-block;
+    margin: 0 10px;
+    transform: none;
+}
+
+h4 + ul{
+    list-style-type: none;
+    line-height: 2;
+}
+aside div:first-of-type,aside div:nth-of-type(2),aside div:last-of-type{
+    text-align: center;
+    border:0.1em solid;
+    margin: 2em auto;
+    padding: 0.2em 0.5em;
+    border-radius: 20px;
+
+}
+h4,h4+ul{
+    clear:left;
+}
+/* Style the job reference number and apply button */
+.ref_num{
+    float: left;
+}
+.click_apply{
+    background-color:#006199;
+    color:rgb(255, 251, 251);
+    border:0.1em solid;
+    border-radius: 20px;
+    width:fit-content;
+    margin: 2em auto;
+    padding: 0.5em 0.5em;
+    display: flex;   /* Use flexbox layout */
+    float: right;
+    text-decoration: none;
+}
+
+
+/* HOW TO APPLY SECTION */
+.apply {
+    background-color: #F0EFF4;
+    border: 1px solid #D8DCE6;
+    border-radius: 24px;
+    padding: 20px 30px;
+    margin: 60px;
+}
+
+.apply .ready-to-impact {
+    font-size: 1rem;
+}
+
+.apply h2 {
+    font-size: 2rem;
+    margin: 0 0 20px;
+    color: #006199;
+}
+
+.apply > p {
+    margin-bottom: 20px;
+}
+
+/* Enable smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+.review-positions {
+    display: inline-block;
+    background-color: #006199;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 24px;
+    text-decoration: none;
+}
+
+.review-positions:hover {
+    background-color: #293650;
+}
+
+.apply li {
+    margin: 15px 10px 15px 0;
+}
+

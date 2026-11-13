@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <!-- Embedded CSS -->
+    <style>
+        main h1, h2, h3 {
+            font-family: "Trebuchet MS", sans-serif;
+            line-height: 1.25;
+        }
+    </style>
+</head>
+<body>
+   <section class="hero">
+        
+        <!-- ---------- Navigation bar ---------- -->
+        <nav>
+            <!-- Left side: logo and page links -->
+            <div class="nav-left">
+
+                <!-- Company logo: clicking it returns to the Home page -->
+                <a href="index.html" class="logo">
+                    <img src="images/logo_.png" alt="company_logo">
+                </a>
+
+                <!-- Company logo: clicking it returns to the Home page -->
+                <div class="navigation_links">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="jobs.html">Jobs</a>
+                    <a href="apply.html">Apply</a>
+                    <a href="about.html">About us</a>
+                </div>
+
+            </div>
+
+            <!-- Right side: search form for job titles or keywords -->
+            <form class="search_form" action="jobs.html" method="get">
+                <input
+                    type="search"
+                    name="keyword"
+                    placeholder="Search jobs or keywords..."
+                    aria-label="Search jobs or keywords">
+
+                <!-- Button that submits the search -->
+                <button type="submit">Search</button>
+            </form>
+
+        </nav>
+
+    <main id="main-content">
+        <!-- Section 1: Team introduction includes: group name, class day/time (nested list) -->
+        <section class="team-intro-section">
+            <div class="page-container">
+                <h1>OUR TEAM</h1>
+                <p class="intro-description">Here is our team for COS10026 Web Technology Project.</p>
+
+                    <!-- The requirement for nested list -->
+                    <ul class="group-info">
+                        <li style="list-style-type: square;"> Group name: <strong>CAYNGAYKHONGSOCHETDUNG</strong>
+                            <ul>
+                                <li style="list-style-type: disc"><strong>Class day:</strong> Friday</li>
+                                <li style="list-style-type: disc"><strong>Class time:</strong> [8 a.m - 12 p.m] or [8 a.m - 10 a.m]</li>
+                                <li style="list-style-type: disc"><strong>Campus:</strong> Swinburne Can Tho</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        <!-- Section 2: A single GROUP photo (not individual), <300 KB located on the right column -->
+        <section class="photo-section">
+            <div class="page-container">
+                <div class="group-story-layout">
+
+                    <!-- Left column: Group story -->
+                    <div class="group-story">
+
+                        <p>Four individuals, different personalities, but one shared goal.</p>
+                        <p>Throughout this project, we learned to collaborate, overcome challenges, and turn our ideas into a website.</p>
+
+                        <!-- quoting a statement from someone, recommend to use blockquote -->
+                        <blockquote>
+                            <p>"Alone we can do so little; together we can do so much."</p>
+                            <footer>- Helen Keller</footer>
+                        </blockquote>
+                    </div>
+                    <figure class="group-photo">
+                        <img src="./images/background.jpg">
+                        <figcaption>Figure 1. Our COS10026 project team</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Member contributions and quotes using a defination list -->
+        <section class="members-section">
+            <div class="page-container">
+                <h2>Behind the Project</h2>
+                <p>Each member plays a part in shaping this web project.</p>
+                <dl class="members-list">
+                    <!-- Member 1 - Ai -->
+                    <div class="member-profile">
+                        <dt><h3>[Trần Hồng Vy Ái]</h3></dt>
+                        <dd><span class="student-id">Student ID: 106391519</span></dd>
+                        <dd><strong>Role:</strong> Code development and GitHub management; responsible for coordinating the final submission</dd>
+                        <dd><strong>Contributions:</strong> Task completed by Ai</dd>
+                        <dd class="member-quote">
+                            <p class="vietnamese-quote"> "Khi đời cho bạn những quả chanh, hãy vắt chúng vào mắt kẻ thù của bạn!"</p>
+                            <p class="eng-quote"><strong>English translation:</strong> “When life gives you lemons, squeze them into the eyes of your enemies!”</p>
+                        </dd>
+                    </div>
+
+                    <!-- Member 2 - Ngan -->
+                    <div class="member-profile">
+                        <dt><h3>[Tống Mỹ Thanh Ngân]</h3></dt>
+                        <dd><span class="student-id">Student ID: 106216298</span></dd>
+                        <dd><strong>Role:</strong> Code development and testing; responsible for checking functionality and fixing issues.</dd>
+                        <dd><strong>Contributions:</strong> Task completed by Ngan</dd>
+                        <dd class="member-quote">
+                            <p class="vietnamese-quote"> "Nhan sắc nào rồi cũng sẽ tàn phai, chỉ có tri thức mới ở lại!"</p>
+                            <p class="eng-quote"><strong>English translation:</strong> "Beauty will eventually fade, but knowledge will last forever!”</p>
+                        </dd>
+                    </div>
+
+                    <!-- Member 3 - Ngọc -->
+                    <div class="member-profile">
+                        <dt><h3>[Trần Bảo Ngọc]</h3></dt>
+                        <dd><span class="student-id">Student ID: 106390804</span></dd>
+                        <dd><strong>Role:</strong> Code development and documentation; responsible for reviewing and improving project content.</dd>
+                        <dd><strong>Contributions:</strong> Task completed by Ngọc</dd>
+                        <dd class="member-quote">
+                            <p class="vietnamese-quote"> "Ngoc's Vietnamese quote"</p>
+                            <p class="eng-quote"><strong>English translation:</strong>"Ngoc's English quote”</p>
+                        </dd>
+                    </div>
+
+                    <!-- Member 4 - Vĩ -->
+                    <div class="member-profile">
+                        <dt><h3>[Hứa Triều Vĩ]</h3></dt>
+                        <dd><span class="student-id">Student ID: 106393243</span></dd>
+                        <dd><strong>Role:</strong> Code development and testing; responsible for reviewing the final project and providing feedback.</dd>
+                        <dd><strong>Contributions:</strong> Task completed by Vi</dd>
+                        <dd class="member-quote">
+                            <p class="vietnamese-quote"> "Vi's Vietnamese quote"</p>
+                            <p class="eng-quote"><strong>English translation:</strong> "Vi's English quote”</p>
+                        </dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- Section 4: Fun facts table with caption (e.g. dream job, coding snack, hometown) -->
+        <section class="facts-section">
+            <div class="page-container">
+                <h2>Beyond the Code</h2>
+                <p>Here are a few fun facts about our team.</p>
+                <div class="facts-table-container">
+                    <table class="facts-table">
+                        <thead>
+                            <tr>
+                                <th>Member</th>
+                                <th>Dream Job</th>
+                                <th>Favourite Coding Snack</th>
+                                <th>Hometown</t>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <th>Vy Ái</th>
+                                <td>?</td>
+                                <td>Matcha KitKat</td>
+                                <td>Cần Thơ</td>
+                            </tr>
+                            
+                            <tr>
+                                <th>Thanh Ngân</th>
+                                <td>Cybersecurity Specialist</td>
+                                <td>Popcorn</td>
+                                <td>Vĩnh Long</td>
+                            </tr>
+
+                            <tr>
+                                <th>Bảo Ngọc</th>
+                                <td>?</td>
+                                <td>Dubai Chocolate</td>
+                                <td>Sóc Trăng</td>
+                            </tr>
+
+                            <tr>
+                                <th>Triều Vĩ</th>
+                                <td>?</td>
+                                <td>?</td>
+                                <td>Cần Thơ</td>
+                            </tr>
+                        </tbody>  
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Acknowledgement of Country -->
+        <section class="country-acknowledgement-section">
+            <div class="country-acknowledgement-content">
+                <h2>Acknowledgement of Country</h2>
+                <p>Our team acknowledge <strong><u>Aboriginal and Torres Strait Islander peoples</u></strong> as the First Peoples of Australia and recognise their continuing connections to Country, culture, and community. We pay our respects to Elders past and present.</p>
+                <h3>Why this matter</h3>
+                <p>As students working on a project in an Australian educational context, we include this acknowledgement to express respect for the histories, cultures, and continuing contributions of Aboriginal and Torres Strait Islander peoples.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Shared footer with index.html, job.html, apply.html -->
+    <footer class="footer">
+
+        <!-- Top part: 4 columns -->
+        <div class="footer-main">
+
+            <!-- Column 1: company introduction -->
+            <div class="footer-column">
+                <h3>G03 Clean Energy</h3>
+                <p>Delivering clean, safe and sustainable energy solutions for communities.</p>
+            </div>
+
+            <!-- Column 2: quick links to the main pages -->
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="apply.html">Apply</a>
+                <a href="about.html">About us</a>
+            </div>
+
+            <!-- Column 3: project links -->
+            <div class="footer-column">
+                <h3>Project Links</h3>
+                <a href="" target="_blank" rel="noopener">Jira Board</a>
+                <a href="" target="_blank" rel="noopener">GitHub Repository</a>
+            </div>
+
+            <!-- Column 4: contact information -->
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <a href="mailto:email@example.com">email@example.com</a>
+                <p>Phone: 0123 456 789</p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

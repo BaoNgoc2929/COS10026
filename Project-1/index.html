@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- Shared stylesheet: navigation bar and footer (used by every page) -->
+    <link rel="stylesheet" href="styles/styles.css"> 
+
+    <!-- Home page stylesheet: styles only for this page -->
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         1. HERO (navigation + banner image + hero text)
+         ===================================================== -->
+
+    <section class="hero">
+        
+        <!-- ---------- Navigation bar ---------- -->
+        <nav>
+            <!-- Left side: logo and page links -->
+            <div class="nav-left">
+
+                <!-- Company logo: clicking it returns to the Home page -->
+                <a href="index.html" class="logo">
+                    <img src="images/logo_.png" alt="company_logo">
+                </a>
+
+                <!-- Company logo: clicking it returns to the Home page -->
+                <div class="navigation_links">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="jobs.html">Jobs</a>
+                    <a href="apply.html">Apply</a>
+                    <a href="about.html">About us</a>
+                </div>
+
+            </div>
+
+            <!-- Right side: search form for job titles or keywords -->
+            <form class="search_form" action="jobs.html" method="get">
+                <input
+                    type="search"
+                    name="keyword"
+                    placeholder="Search jobs or keywords..."
+                    aria-label="Search jobs or keywords">
+
+                <!-- Button that submits the search -->
+                <button type="submit">Search</button>
+            </form>
+
+        </nav>
+        
+        <!-- ---------- Banner image (below the navigation bar) ---------- -->
+        <section class="hero-image">
+                <img src="images/background.jpg" alt="Renewable energy solutions">
+        </section>
+
+        <!-- ---------- Hero content (placed on top of the banner image) ---------- -->
+        <div class="hero-content">
+
+            <!-- Title and description -->
+            <div class="hero-text">
+
+                <!-- Title -->
+                <div class="hero-title">
+                    <h1> <strong> C-GROUP </strong> </h1> 
+                </div>
+
+                <!-- Description -->
+                <div class="hero-description">
+                    <p> Discover how renewable energy can transform communities, reduce environmental impact, 
+                        and create a better future for generations to come.</p> 
+                </div>
+
+            </div>
+
+            <!-- Call-to-action button -->
+            <div class="hero-cta">
+                <a href="jobs.html" class="btn-primary">Explore Careers → </a>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <!-- =====================================================
+         2. INTRODUCTION
+         Left: intro text + statistics.  Right: feature cards.
+         ===================================================== -->
+    <section class="intro-section">
+
+        <!-- ---------- Left column: text and statistics ---------- -->
+        <section class="intro">
+            <h2> Why Communities Choose G03 for Clean Energy Solutions? </h2>
+            <p> From solar power to wind energy, we deliver clean, safe, and sustainable 
+                solutions that help communities easily access green energy through modern 
+                technology and dedicated support. </p>
+
+            <!-- Company statistics (3 items in a row) -->
+            <div class="company-stats">
+
+                <!-- Stat 1: renewable energy generated -->
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <img src="images/icon_1.png" alt="lightning_icon ">
+                    </div>
+                    <h4>500 MW</h4>
+                    <p>Renewable Energy Generated</p>
+                </div>
+
+                <!-- Stat 2: carbon emissions reduced -->
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <img src="images/icon_2.png" alt="leaf_icon">
+                    </div>
+                    <h4>1.2M tons CO₂</h4>
+                    <p> Emissions Reduced</p>
+                </div>
+
+                <!-- Stat 3: households benefited -->
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <img src="images/icon_3.png" alt="house_icon">
+                    </div>
+                    <h4>100,000+</h4>
+                    <p>Households Benefited</p>
+                </div>
+
+            </div>
+            
+        </section>
+
+        <!-- ---------- Right column: feature cards (stacked vertically) ---------- -->
+        <section class="features-section">
+            <section class="features">
+
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <h3> Advanced Technology </h3>
+                    <p> Applying modern solutions to optimize energy efficiency. </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <h3> Comprehensive Solutions </h3>
+                    <p> From research and development to implementation and operation, 
+                        all in one. </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <h3> Community Support </h3>
+                    <p> Partnering with people and businesses on the journey 
+                        toward a greener future. </p>
+                </div>
+
+            </section>
+        </section>
+        
+    </section>
+
+    <!-- =====================================================
+         3. PROJECTS
+         ===================================================== -->
+    <section class="intro-project">
+
+        <!-- Heading and description above the project cards -->
+        <section class="project-text">
+            <h2> Our Sustainable Energy Projects </h2>
+            <p> Explore how C-Group is developing cleaner energy solutions to create a more sustainable future. </p>
+        </section>
+
+        <!-- Featured projects (3 cards in a row) -->
+        <section class="featured-projects">
+            <section class="projects">
+
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="images/project_1.jpg" alt="Solar panels in a solar farm">
+                    <h3> Solar Energy Solutions </h3>
+                    <p> Harnessing sunlight to generate clean, renewable electricity </p>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="images/project_2.jpg" alt="Wind turbines generating renewable energy">
+                    <h3> Wind Power Projects </h3>
+                    <p> Turning wind into sustainable energy for a greener future </p>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img src="images/project_3.jpg" alt="Biomass energy facility">
+                    <h3> Sustainable Industrial Energy </h3>
+                    <p> Supporting industries in reducing emissions and improving energy efficiency </p>
+                </div>
+
+            </section>
+        </section>
+
+    </section>
+
+    <!-- =====================================================
+         4. SUSTAINABLE ENERGY TABLE
+         ===================================================== -->
+    <section class="solutions-section">
+
+        <h2> Our Sustainable Energy Solutions </h2>
+        <table class="solutions-table">
+
+            <!-- Table title: merge 3 columns -->
+            <tr>
+                <th colspan="3">Our Sustainable Energy Solutions</th>
+            </tr>
+            
+            <!-- Column headings -->
+            <tr>
+                <th>Solution</th>
+                <th>Main Purpose</th>
+                <th>Benefit</th>
+            </tr>
+
+            <!-- Solar Energy -->
+            <tr>
+                <td>Solar Energy</td>
+                <td>Generate electricity using sunlight.</td>
+                <td>Provides clean, renewable energy and reduces reliance on fossil fuels.</td>
+            </tr>
+
+            <!-- Wind Energy -->
+            <tr>
+                <td>Wind Energy</td>
+                <td>Generate electricity using wind turbines.</td>
+                <td>Reduces greenhouse gas emissions and supports clean energy production.</td>
+            </tr>
+
+            <!-- Energy Efficiency -->
+            <tr>
+                <td>Energy Efficiency</td>
+                <td>Reduce energy consumption through efficient technologies and practices.</td>
+                <td>Saves energy, lowers costs and reduces environmental impact.</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <!-- =====================================================
+         5. LATEST NEWS
+         ===================================================== -->
+    <section class="news-section">
+
+        <!-- Heading and description above the news grid -->
+        <div class="news-text">
+            <h2> Latest News &amp; Insights </h2>
+            <p>  Discover the latest ideas and insights in renewable energy
+                 and sustainable living.</p>
+        </div>
+
+        <!-- News grid: 1 big article on the left, 2 smaller articles on the right -->
+        <div class="news-grid">
+
+            <!-- Left: main featured article -->
+            <a href="https://www.bbc.com/future/article/20261023-how-solar-became-bigger-than-nuclear" class="news-card-link">
+
+                <article class="news-card news-main">
+                    <img src="images/bbc_solar.jpg" alt="Solar panels in a solar farm">
+
+                    <div class="news-content">
+                        <p class="news-category">SOLAR ENERGY</p>
+                        <h3>How Solar Power Is Transforming the World</h3>
+                        <p> Discover how falling costs and rapid growth are making solar power a 
+                        leading source of clean electricity worldwide </p>
+                    </div>
+                </article>
+            </a>
+            
+            <!-- Right: wrapper that holds the 2 smaller articles (stacked) -->
+            <div class="news-right">
+
+                <!-- Top-right article -->
+                <a href="https://www.bbc.com/future/article/20250506-renewable-energys-trouble-with-wind-theft" class="news-card-link">
+
+                    <article class="news-card news-secondary">
+                        <img src="images/bbc_wind.jpg" alt="Wind turbines generating renewable energy">
+
+                        <div class="news-content">
+                            <p class="news-category">WIND ENERGY</p>
+                            <h3>The Hidden Challenge of Wind Energy</h3>
+                        </div>
+                    </article>
+
+                </a>
+
+                <!-- Bottom-right article -->
+                <a href="https://www.bbc.com/news/science-environment-60987614" class="news-card-link">
+
+                    <article class="news-card news-secondary">
+                        <img src="images/bbc_sustainace.jpg" alt="Biomass energy facility">
+
+                        <div class="news-content">
+                            <p class="news-category">SUSTAINABILITY</p>
+                            <h3>Five Ways to Help Save Our Planet</h3>
+                        </div>
+                    </article>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================================
+         6. FOOTER
+         ===================================================== -->
+    <footer class="footer">
+
+        <!-- Top part: 4 columns -->
+        <div class="footer-main">
+
+            <!-- Column 1: company introduction -->
+            <div class="footer-column">
+                <h3>G03 Clean Energy</h3>
+                <p>Delivering clean, safe and sustainable energy solutions for communities.</p>
+            </div>
+
+            <!-- Column 2: quick links to the main pages -->
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="apply.html">Apply</a>
+                <a href="about.html">About us</a>
+            </div>
+
+            <!-- Column 3: project links -->
+            <div class="footer-column">
+                <h3>Project Links</h3>
+                <a href="https://student-team-bgzfvh3f.atlassian.net/jira/software/projects/SCRUM/boards/1?filter=&groupBy=subtask" target="_blank" rel="noopener">Jira Board</a>
+                <a href="https://github.com/COS10026-CNKSCD/Project-1" target="_blank" rel="noopener">GitHub Repository</a>
+            </div>
+
+            <!-- Column 4: contact information -->
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <a href="mailto:email@example.com">email@example.com</a>
+                <p>Phone: 0123 456 789</p>
+            </div>
+
+        </div>
+    </footer>
+    
+</body>
+</html>

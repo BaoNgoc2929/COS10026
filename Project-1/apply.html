@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Application Form</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/apply.css">
+</head>
+<body>  
+        <!-- ---------- Navigation bar ---------- -->
+        <nav>
+            <!-- Left side: logo and page links -->
+            <div class="nav-left">
+
+                <!-- Company logo: clicking it returns to the Home page -->
+                <a href="index.html" class="logo">
+                    <img src="images/logo_.png" alt="company_logo">
+                </a>
+
+                <!-- Company logo: clicking it returns to the Home page -->
+                <div class="navigation_links">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="jobs.html">Jobs</a>
+                    <a href="apply.html">Apply</a>
+                    <a href="about.html">About us</a>
+                </div>
+
+            </div>
+
+            <!-- Right side: search form for job titles or keywords -->
+            <form class="search_form" action="jobs.html" method="get">
+                <input
+                    type="search"
+                    name="keyword"
+                    placeholder="Search jobs or keywords..."
+                    aria-label="Search jobs or keywords">
+
+                <!-- Button that submits the search -->
+                <button type="submit">Search</button>
+            </form>
+
+        </nav>
+        
+    <section class="theme">
+      <img src="./images/logo.jpg" alt="Company Logo" width="200">
+
+      <h1 id="applytitle">Job Application Form</h1>
+      
+      <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+        <!-- 1. Position Vacancy -->
+        <fieldset>
+          <legend>Position Vacancy</legend>
+          <p>
+            <label for="jobRef">Job Reference Number:</label><br>
+            <input type="text" name="jobRef" id="jobRef" required pattern="^[a-zA-Z0-9]{5}$" placeholder="e.g. AB123">
+          </p>
+        </fieldset>
+
+        <!-- 2. Personal Information -->
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <p>
+            <label for="firstName">First Name:</label><br>
+            <input type="text" name="firstName" id="firstName" required maxlength="20" pattern="^[A-Za-z]{1,20}$">
+          </p>
+
+          <p>
+            <label for="lastName">Last Name:</label><br>
+            <input type="text" name="lastName" id="lastName" required maxlength="20" pattern="^[A-Za-z]{1,20}$">
+          </p>
+
+          <p>
+            <label for="dob">Date of Birth (dd/mm/yyyy):</label><br>
+            <input type="text" name="dob" id="dob" required pattern="^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[012])\/(19|20)\d\d$" placeholder="dd/mm/yyyy">
+          </p>
+
+          <!-- Gender Fieldset inside Personal Info -->
+          <fieldset>
+            <legend>Gender</legend>
+            <label><input type="radio" name="gender" value="male" required> Male</label><br>
+            <label><input type="radio" name="gender" value="female" required> Female</label><br>
+            <label><input type="radio" name="gender" value="nonbinary" required> Non-binary</label><br>
+            <label><input type="radio" name="gender" value="other" required> Prefer not to say</label>
+          </fieldset>
+        </fieldset>
+
+        <!-- 3. Contact & Address Details -->
+        <fieldset>
+          <legend>Contact & Address Details</legend>
+
+          <p>
+            <label for="address">Street Address:</label><br>
+            <input type="text" name="address" id="address" required maxlength="40">
+          </p>
+
+          <p>
+            <label for="suburb">Suburb/Town:</label><br>
+            <input type="text" name="suburb" id="suburb" required maxlength="40">
+          </p>
+
+          <p>
+            <label for="state">State:</label><br>
+            <select name="state" id="state" required>
+              <option value="" disabled selected>Select State</option>
+              <option value="VIC">VIC</option>
+              <option value="NSW">NSW</option>
+              <option value="QLD">QLD</option>
+              <option value="NT">NT</option>
+              <option value="WA">WA</option>
+              <option value="SA">SA</option>
+              <option value="TAS">TAS</option>
+              <option value="ACT">ACT</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="postcode">Postcode:</label><br>
+            <input type="text" name="postcode" id="postcode" required pattern="^[0-9]{4}$" maxlength="4" placeholder="3000">
+          </p>
+
+          <p>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" required>
+          </p>
+
+          <p>
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" name="phone" id="phone" required pattern="^[0-9\s\-]{8,12}$" placeholder="0412345678">
+          </p>
+        </fieldset>
+
+        <!-- 4. Skills & Qualifications -->
+        <fieldset>
+          <legend>Skills & Qualifications</legend>
+
+          <fieldset>
+            <legend>Skill List</legend>
+            <label><input type="checkbox" name="skills[]" value="HTML" checked="checked"> HTML</label><br>
+            <label><input type="checkbox" name="skills[]" value="CSS"> CSS</label><br>
+            <label><input type="checkbox" name="skills[]" value="JavaScript"> JavaScript</label><br>
+            <label><input type="checkbox" name="skills[]" value="PHP"> PHP</label>
+          </fieldset>
+
+          <p>
+            <label for="otherSkills">Other Skills:</label><br>
+            <textarea name="otherSkills" id="otherSkills" rows="4" cols="40"></textarea>
+          </p>
+        </fieldset>
+
+        <!-- Submit & Reset Buttons -->
+        <p>
+          <input type="submit" value="Apply">
+          <input type="reset" value="Reset">
+        </p>
+
+      </form>
+
+    </section>
+    <!-- =====================================================
+         5. FOOTER
+         ===================================================== -->
+    <footer class="footer">
+
+        <!-- Top part: 4 columns -->
+        <div class="footer-main">
+
+            <!-- Column 1: company introduction -->
+            <div class="footer-column">
+                <h3>G03 Clean Energy</h3>
+                <p>Delivering clean, safe and sustainable energy solutions for communities.</p>
+            </div>
+
+            <!-- Column 2: quick links to the main pages -->
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="apply.html">Apply</a>
+                <a href="about.html">About us</a>
+            </div>
+
+            <!-- Column 3: project links -->
+            <div class="footer-column">
+                <h3>Project Links</h3>
+                <a href="" target="_blank" rel="noopener">Jira Board</a>
+                <a href="" target="_blank" rel="noopener">GitHub Repository</a>
+            </div>
+
+            <!-- Column 4: contact information -->
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <a href="mailto:email@example.com">email@example.com</a>
+                <p>Phone: 0123 456 789</p>
+            </div>
+
+        </div>
+    </footer>
+    
+</body>
+</html>

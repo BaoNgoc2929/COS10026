@@ -1,0 +1,109 @@
+/*
+
+filename: apply.css
+
+author: Hua Trieu Vi 
+
+created: 18/10/2026
+last modified: 22/10/2026
+
+description: apply.css
+
+*/
+
+/* =========================
+   APPLICATION FORM STYLING (apply.css)
+========================= */
+
+/* General container styling for the form section */
+.theme {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 15px;
+    color: darkslategray;
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px lightgray;
+}
+
+/* Main title styling */
+#applytitle {
+    text-align: center;
+    color: darkslategray;
+    margin-bottom: 24px;
+}
+
+/* General styling for fieldsets */
+.theme fieldset {
+    border: 1px solid silver;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+    background-color: white;
+}
+
+/* Spacing for input rows/paragraphs */
+.theme p {
+    margin-bottom: 16px;
+}
+
+/* Input fields, select dropdowns, and textareas */
+.theme input[type="text"],
+.theme input[type="email"],
+.theme input[type="tel"],
+.theme select,
+.theme textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid silver;
+    border-radius: 8px;
+    font-family: "Trebuchet MS", sans-serif;
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+/* Radio buttons and checkboxes alignment */
+.theme input[type="radio"],
+.theme input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: darkslategray;
+}
+
+.theme fieldset fieldset label {
+    display: block;
+}
+
+/* Submit and Reset buttons styling */
+.theme input[type="submit"],
+.theme input[type="reset"] {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Submit button customization */
+.theme input[type="submit"] {
+    background-color: darkslategray;
+    color: white;
+    margin-right: 12px;
+}
+
+.theme input[type="submit"]:hover {
+    background-color: midnightblue;
+}
+
+/* Reset button customization */
+.theme input[type="reset"] {
+    background-color: lightgray;
+    color: dimgray;
+}
+
+.theme input[type="reset"]:hover {
+    background-color: silver;
+}

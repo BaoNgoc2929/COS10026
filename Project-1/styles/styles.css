@@ -1,0 +1,176 @@
+/* =========================================================
+   SHARED STYLES (used by every page)
+ 
+   Sections in this file:
+     1. Header / navigation bar
+     2. Search form
+ 
+   Team design notes:
+     Font:              "Trebuchet MS", sans-serif
+     Box background:    #F0EFF4 (light grey), #293650 (dark blue)
+     Text colors:       black, #006199 (blue)
+   ========================================================= */
+ 
+/* Make width and height include padding and border (easier to size boxes) */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   1. HEADER / NAVIGATION
+   ========================================================= */
+
+/* Navigation bar: logo and links on the left, search form on the right */
+nav {
+    display: flex;
+    justify-content: space-between;          /* places the two sides at opposite ends */
+    align-items: center;                     /* vertically centers the logo, links and form */
+    padding: 24px 38px;
+}
+
+/* ---------- Left side: logo + page links ---------- */
+
+/* Logo image: limit its size so it fits in the navigation bar */
+.logo img {
+    height: 50px;       /* change this number to make the logo bigger or smaller */
+    width: auto;        /* width follows the height, so the logo is not stretched */
+    display: block;     /* removes the small gap under the image */
+}
+
+/* Groups the company logo and the navigation links together */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 32px;                               /* space between the logo and the links */
+}
+
+/* Puts the navigation links in a horizontal row */
+.navigation_links {
+    display: flex;
+    align-items: center;
+    gap: 28px;                              /* space between the links */
+}
+
+/* Each navigation link */
+.navigation_links a {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 15px;
+    color: #293650;
+    text-decoration: none;                 /* removes the default underline */
+    transition: color 0.3s ease;           /* smooth color change on hover */
+    border-radius: 50px;                   /* pill shape (used by the hover background) */
+    padding: 12px 24px;
+}
+
+/* Link gets a light background and black text when the mouse is over it */
+.navigation_links a:hover {
+    background-color: #F0EFF4;
+    color: #000000;
+}
+
+/* =========================================================
+   2. SEARCH FORM
+   ========================================================= */
+ 
+/* Puts the search input and the button in a horizontal row */
+.search_form {
+    display: flex;
+    align-items: center;
+    gap: 20px;                           /* space between the input and the button */
+}
+
+/* Search input field */
+.search_form input[type="search"] {
+    width: 320px;
+    height: 42px;
+    padding: 0 16px;                   /* space between the text and the edge of the field */
+    border: none;                      /* removes the default border */
+    border-radius: 24px;               /* rounded (pill) shape */
+    background-color: #F0EFF4;
+    font-size: 14px;
+}
+
+/* Search button */
+.search_form button {
+    height: 42px;
+    padding: 0 24px;
+    border: none;
+    border-radius: 24px;
+    background-color: #293650;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;                 /* shows the hand cursor on hover */
+}
+
+/* =========================================================
+   3. FOOTER
+   ========================================================= */
+
+/* Footer box: same style as the projects box (grey, rounded on all corners) */
+.footer {
+    background-color: #F0EFF4;
+    border-radius: 28px;
+    padding: 40px;
+    margin: 50px 3.6%;                  /* same side margin as the other sections */
+}
+
+/* Top part: puts the columns in a horizontal row */
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* One footer column */
+.footer-column {
+    flex: 1;                            /* all columns have equal width */
+    min-width: 0;
+}
+
+/* Column title */
+.footer-column h3 {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 18px;
+    color: #293650;
+    margin: 0 0 16px;
+}
+
+/* Column text and links (shared settings) */
+.footer-column p,
+.footer-column a {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #444444;
+    margin: 0 0 8px;
+}
+
+/* Links: one per line, blue, no underline */
+.footer-column a {
+    display: block;
+    color: #006199;
+    text-decoration: none;
+    transition: color 0.3s ease;        /* smooth color change on hover */
+}
+
+/* Link becomes darker blue when hovered */
+.footer-column a:hover {
+    color: #003B5C;
+}
+
+/* Bottom part: thin line above the copyright text */
+.footer-bottom {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #8D9BB5;
+    text-align: center;
+}
+
+/* Copyright text */
+.footer-bottom p {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 13px;
+    color: #444444;
+    margin: 0;
+}
